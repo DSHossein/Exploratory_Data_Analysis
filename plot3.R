@@ -12,7 +12,7 @@ df <- df[df$Date >= Date1 & df$Date <= Date2,]
 datetime <- paste(as.Date(df$Date), df$Time)
 df$Datetime <- as.POSIXct(datetime)
 
-#plot2
+#plot3
 with(df,
      { plot(as.numeric(Sub_metering_1)~Datetime, type="l",
             ylab="Energy sub metering", xlab="")
