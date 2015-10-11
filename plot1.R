@@ -1,6 +1,6 @@
 
 #load the data to a data frame
-f=read.csv('./data/household_power_consumption.txt',sep = ';')
+df=read.csv('./data/household_power_consumption.txt',sep = ';')
 
 #change the class of Date column to Date
 df=transform(df,Date=as.Date(Date,"%d/%m/%Y"))
